@@ -27,7 +27,7 @@ function App() {
     setData(mydata);
   }, []);
 
-  return <div>{data.title}</div>;
+  return <div>Title: {data.title}</div>;
 }
 
 export default App;

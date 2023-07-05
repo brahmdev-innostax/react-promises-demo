@@ -1,11 +1,12 @@
 // file to make various calls to the backend
-import axios from "axios";
+// import { axios } from "axios";
+const axios = require("axios");
 
 function getData() {
   // a dummy api to post GET requests to
   const backendUrl = "https://jsonplaceholder.typicode.com/todos/1";
-  let data = null;
-  //   get the data using GET method in axios
+  let data = "hello";
+  // get the data using GET method in axios
   axios
     .get(backendUrl)
     .then((res) => {
