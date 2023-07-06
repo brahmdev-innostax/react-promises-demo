@@ -24,7 +24,9 @@ function App() {
   useEffect(() => {
     let mydata = getData();
     console.log(mydata);
-    setData(mydata);
+    mydata.then((res) => {
+      setData(res);
+    });
   }, []);
 
   return <div>Title: {data.title}</div>;
